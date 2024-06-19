@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { productsApi } from "../features/apiSlice";
+import { productsApi } from "../context/productsSlice";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { categoriesApi } from "../features/categoryApi";
+import { categoriesApi } from "../context/categorySlice";
 
 export const store = configureStore({
   reducer: {
